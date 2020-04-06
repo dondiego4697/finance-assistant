@@ -1,0 +1,31 @@
+PODS:
+  - CBTabBarController (0.9.5)
+  - Realm (4.3.0):
+    - Realm/Headers (= 4.3.0)
+  - Realm/Headers (4.3.0)
+  - RealmSwift (4.3.0):
+    - Realm (= 4.3.0)
+  - Reveal-SDK (24)
+
+DEPENDENCIES:
+  - CBTabBarController
+  - RealmSwift
+  - Reveal-SDK
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CBTabBarController
+    - Realm
+    - RealmSwift
+  trunk:
+    - Reveal-SDK
+
+SPEC CHECKSUMS:
+  CBTabBarController: 42e08d70eae311f839817c860b0ec80e9647f8d3
+  Realm: 9357c3589555793e1860a7104a7412bca4a48d99
+  RealmSwift: 402f1e379a8ef82c635313037b043f0f06de880c
+  Reveal-SDK: 5d7e56b8f018c0a88b3a2c10bf68d598bbd3b071
+
+PODFILE CHECKSUM: 63f1e980721b8a3dc6a98b53cd616f8d1d011257
+
+COCOAPODS: 1.9.1
