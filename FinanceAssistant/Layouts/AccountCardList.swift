@@ -4,35 +4,45 @@ class AccountCardListLayout: UICollectionViewLayout {
     
     var cache: [UICollectionViewLayoutAttributes] = []
   
-    var selectedItemIndex: Int {
-        return max(Int(collectionView!.contentOffset.x / standardWidth), 0)
+    var cardWidth: CGFloat {
+        return collectionView!.bounds.width / 3 * 2
     }
     
-    var standardWidth: CGFloat {
-        return collectionView!.bounds.width / 6 * 5
-    }
-    
-    var dragOffset: CGFloat {
-        return collectionView!.bounds.width / 2
-    }
-  
-    var width: CGFloat {
-        return collectionView!.bounds.width
-    }
-  
-    var height: CGFloat {
+    var cardHeight: CGFloat {
         return collectionView!.bounds.height
     }
-  
+    
+    var offset: CGFloat = 20.0
+    var firstOffset: CGFloat {
+        return collectionWidth / 2 - cardWidth / 2
+    }
+    
+    var collectionWidth: CGFloat {
+        return collectionView!.bounds.width
+    }
+    
+    var collectionHeight: CGFloat {
+        return collectionView!.bounds.height
+    }
+
+    var currentItemIndex: CGFloat {
+        return getCurrentItemIndex(collectionView!.contentOffset.x)
+    }
+    var lastItemIndex: CGFloat = 0
+    
     var numberOfItems: Int {
         return collectionView!.numberOfSections
+    }
+    
+    private func getCurrentItemIndex(_ currentOffset: CGFloat) -> CGFloat {
+        return round(max(currentOffset, 0) / (cardWidth + offset))
     }
 }
 
 extension AccountCardListLayout {
     override var collectionViewContentSize: CGSize {
-        let contentWidth = (CGFloat(numberOfItems) * standardWidth)
-        return CGSize(width: contentWidth, height: height)
+        let contentWidth = CGFloat(numberOfItems) * cardWidth + CGFloat(numberOfItems) * offset + 2 * firstOffset
+        return CGSize(width: contentWidth, height: collectionHeight)
     }
   
     override func prepare() {
@@ -46,14 +56,21 @@ extension AccountCardListLayout {
             let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
             attributes.zIndex = item
             
-            if indexPath.section == selectedItemIndex {
-                x = min(collectionView!.contentOffset.x, dragOffset)
-                x = -x
-            } else if indexPath.section == (selectedItemIndex + 1) && indexPath.section != numberOfItems {
-                
+            if (currentItemIndex != lastItemIndex) {
+                let generator = UIImpactFeedbackGenerator(style: .light)
+                generator.impactOccurred()
+                lastItemIndex = currentItemIndex
+            }
+            
+            if (indexPath.section == 0) {
+                x = x + firstOffset
+            } else if (indexPath.section >= 1) {
+                x = x + 20
+            } else if indexPath.section == Int(currentItemIndex) {
+
             }
 
-            frame = CGRect(x: x, y: 0, width: standardWidth, height: height)
+            frame = CGRect(x: x, y: 0, width: cardWidth, height: cardHeight)
             attributes.frame = frame
       
             cache.append(attributes)
@@ -75,8 +92,9 @@ extension AccountCardListLayout {
         forProposedContentOffset proposedContentOffset: CGPoint,
         withScrollingVelocity velocity: CGPoint
     ) -> CGPoint {
-        let itemIndex = round(proposedContentOffset.x / standardWidth)
-        let xOffset = itemIndex * standardWidth
+        let itemIndex = getCurrentItemIndex(proposedContentOffset.x)
+        let xOffset = itemIndex * cardWidth + itemIndex * offset
+        
         return CGPoint(x: xOffset, y: 0)
     }
   
