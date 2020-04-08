@@ -38,11 +38,11 @@
 		44CCCB0523CB42D200A32B59 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCCB0423CB42D200A32B59 /* Budget.swift */; };
 		44CCCB0923CB465900A32B59 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCCB0823CB465900A32B59 /* DatabaseManager.swift */; };
 		44FC875223CB913500824A4A /* BudgetParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FC875123CB913500824A4A /* BudgetParams.swift */; };
-		D05007B3E6957AEFF73A77F4 /* Pods_FinanceAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2080DF5340FD69FDA8D26E5B /* Pods_FinanceAssistant.framework */; };
+		787A644562AE6A7EBC63787C /* Pods_FinanceAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A22523BC18BD4FA75ADA1D /* Pods_FinanceAssistant.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2080DF5340FD69FDA8D26E5B /* Pods_FinanceAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		374C686EAC2A70059AA3FCF2 /* Pods-FinanceAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceAssistant.debug.xcconfig"; path = "Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		443E8F80243ADCC7000CB9F2 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		443E8F82243ADE39000CB9F2 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		443E8F84243B0C0E000CB9F2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 		44CCCB0423CB42D200A32B59 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 		44CCCB0823CB465900A32B59 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		44FC875123CB913500824A4A /* BudgetParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetParams.swift; sourceTree = "<group>"; };
-		64B102555946E4E7D0AB7F1F /* Pods-FinanceAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceAssistant.release.xcconfig"; path = "Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant.release.xcconfig"; sourceTree = "<group>"; };
-		E5D815B3B22A2328514F1DC3 /* Pods-FinanceAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceAssistant.debug.xcconfig"; path = "Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		59A22523BC18BD4FA75ADA1D /* Pods_FinanceAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BDF687E4294BC8BC69A24B6 /* Pods-FinanceAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceAssistant.release.xcconfig"; path = "Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,18 +85,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05007B3E6957AEFF73A77F4 /* Pods_FinanceAssistant.framework in Frameworks */,
+				787A644562AE6A7EBC63787C /* Pods_FinanceAssistant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43C45A030AB224FC754735B8 /* Pods */ = {
+		15B8A8635A90FB4E8748878E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E5D815B3B22A2328514F1DC3 /* Pods-FinanceAssistant.debug.xcconfig */,
-				64B102555946E4E7D0AB7F1F /* Pods-FinanceAssistant.release.xcconfig */,
+				374C686EAC2A70059AA3FCF2 /* Pods-FinanceAssistant.debug.xcconfig */,
+				5BDF687E4294BC8BC69A24B6 /* Pods-FinanceAssistant.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -108,8 +108,8 @@
 				44CCCB0123CB3EB000A32B59 /* Podfile */,
 				4484579A238001130087A520 /* FinanceAssistant */,
 				44845799238001130087A520 /* Products */,
-				43C45A030AB224FC754735B8 /* Pods */,
-				A46149B541A97A3C0D3C5073 /* Frameworks */,
+				15B8A8635A90FB4E8748878E /* Pods */,
+				D4B1142C9790EB273089E889 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,10 +238,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		A46149B541A97A3C0D3C5073 /* Frameworks */ = {
+		D4B1142C9790EB273089E889 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2080DF5340FD69FDA8D26E5B /* Pods_FinanceAssistant.framework */,
+				59A22523BC18BD4FA75ADA1D /* Pods_FinanceAssistant.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -253,11 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 448457AC238001140087A520 /* Build configuration list for PBXNativeTarget "FinanceAssistant" */;
 			buildPhases = (
-				C478BD63D077498B8E0FF25E /* [CP] Check Pods Manifest.lock */,
+				475924032B5D4204F4681C17 /* [CP] Check Pods Manifest.lock */,
 				44845794238001130087A520 /* Sources */,
 				44845795238001130087A520 /* Frameworks */,
 				44845796238001130087A520 /* Resources */,
-				4EBFADE3111A7376AA537377 /* [CP] Embed Pods Frameworks */,
+				ECE8800C760D7C7BE5EB03EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,24 +326,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4EBFADE3111A7376AA537377 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C478BD63D077498B8E0FF25E /* [CP] Check Pods Manifest.lock */ = {
+		475924032B5D4204F4681C17 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,6 +346,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECE8800C760D7C7BE5EB03EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceAssistant/Pods-FinanceAssistant-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -530,15 +530,24 @@
 		};
 		448457AD238001140087A520 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5D815B3B22A2328514F1DC3 /* Pods-FinanceAssistant.debug.xcconfig */;
+			baseConfigurationReference = 374C686EAC2A70059AA3FCF2 /* Pods-FinanceAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39MDX3FTNZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift\"",
+				);
 				INFOPLIST_FILE = FinanceAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Realm/core",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sdg.FinanceAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -549,15 +558,24 @@
 		};
 		448457AE238001140087A520 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64B102555946E4E7D0AB7F1F /* Pods-FinanceAssistant.release.xcconfig */;
+			baseConfigurationReference = 5BDF687E4294BC8BC69A24B6 /* Pods-FinanceAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39MDX3FTNZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RealmSwift\"",
+				);
 				INFOPLIST_FILE = FinanceAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Realm/core",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sdg.FinanceAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";

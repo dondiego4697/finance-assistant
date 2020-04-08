@@ -4,5 +4,4 @@ use_frameworks!
 target "FinanceAssistant" do
     pod 'RealmSwift'
     pod 'CBTabBarController'
-    pod 'Reveal-SDK', :configurations => ['Debug']
 end

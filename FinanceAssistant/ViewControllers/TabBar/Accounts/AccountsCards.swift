@@ -41,24 +41,7 @@ extension AccountsCardsViewController: UICollectionViewDataSource, AccountCardDe
         return cell
     }
     
-    func getCollectionViewBounds() -> CGRect {
-        return self.collectionView.bounds
-    }
-}
-
-extension AccountsCardsViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(
-        _ collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        insetForSectionAt section: Int
-    ) -> UIEdgeInsets {
-        print("asdasdasd")
-        let totalCellWidth = collectionView.bounds.width * CGFloat(self.accounts.count)
-        let totalSpacingWidth = 20.0 * CGFloat(self.accounts.count - 1)
-
-        let leftInset = (collectionView.bounds.width - CGFloat(totalCellWidth + totalSpacingWidth)) / 2
-        let rightInset = leftInset
-
-        return UIEdgeInsets(top: 0, left: leftInset, bottom: 0, right: rightInset)
+    func someFunction() -> CGFloat {
+        return 0.0
     }
 }
