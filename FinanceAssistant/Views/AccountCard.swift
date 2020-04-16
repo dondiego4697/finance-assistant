@@ -42,18 +42,16 @@ extension AccountCard {
         let sublayers = self.container.layer.sublayers!
         sublayers[0].cornerRadius = 15.0
     }
+    
+    private func setCardShadow() {
+        
+    }
 
     func setCardStyle() {
         setCardGradient()
+        setCardShadow()
     }
-    
-    func setCardShadow() {
-        self.container.layer.shadowColor = UIColor.black.cgColor
-        self.container.layer.shadowOffset = CGSize(width: 10, height: 10)
-        self.container.layer.shadowRadius = 2.0
-        self.container.layer.shadowOpacity = 0.1
-        self.container.layer.masksToBounds = false
-    }
+
     
     func setCardData(account: Account) {
         self.sum.text = "12000.01"
@@ -62,23 +60,5 @@ extension AccountCard {
     
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
-      
-//        print(self.delegate?.getCollectionItemDiff())
-        
-//        let featuredWidth = bounds!.width / 6 * 5
-//        let standardWidth = bounds!.width / 6 * 3
-
-//        let delta = 1 - ((featuredWidth - frame.width) / (featuredWidth - standardWidth))
-//        self.container.alpha = min(delta + 0.5, 1)
-//        let minAlpha: CGFloat = 0.3
-//        let maxAlpha: CGFloat = 0.75
-      
-//        imageCoverView.alpha = maxAlpha - (delta * (maxAlpha - minAlpha))
-      
-//        let scale = max(delta, 0.5)
-//        titleLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
-      
-//        timeAndRoomLabel.alpha = delta
-//        speakerLabel.alpha = delta
     }
 }

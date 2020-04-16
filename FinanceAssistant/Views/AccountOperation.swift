@@ -1,8 +1,8 @@
 import UIKit
 
-class AccountAction: UICollectionViewCell {
+class AccountOperation: UICollectionViewCell {
     
-    static let reuseIdentifier = "AccountAction"
+    static let reuseIdentifier = "AccountOperation"
     
     @IBOutlet weak var imageIcon: UIImageView!
     @IBOutlet weak var name: UILabel!
@@ -14,6 +14,6 @@ class AccountAction: UICollectionViewCell {
     
     func setActionData() {
         self.imageIcon.image = UIImage(named: "tab-accounts")!
-        self.name.text = "Some action"
+        self.name.text = "Some operation"
     }
 }

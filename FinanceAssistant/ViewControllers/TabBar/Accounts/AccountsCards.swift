@@ -35,7 +35,6 @@ extension AccountsCardsViewController: UICollectionViewDataSource, AccountCardDe
         cell.delegate = self
 
         cell.setCardStyle()
-        cell.setCardShadow()
         cell.setCardData(account: accounts[indexPath.section])
         
         return cell

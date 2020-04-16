@@ -9,38 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-Bold.ttf">
-            <string>Montserrat-Bold</string>
-        </array>
-        <array key="Montserrat-ExtraBold.ttf">
-            <string>Montserrat-ExtraBold</string>
-        </array>
         <array key="Montserrat-Medium.ttf">
             <string>Montserrat-Medium</string>
         </array>
-        <array key="Montserrat-Regular.ttf">
-            <string>Montserrat-Regular</string>
-        </array>
     </customFonts>
     <scenes>
-        <!--Budgets-->
-        <scene sceneID="imU-dq-epN">
-            <objects>
-                <viewController id="c7p-hd-lZq" customClass="BudgetsViewController" customModule="FinanceAssistant" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qn9-jP-mh1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="background-color"/>
-                        <viewLayoutGuide key="safeArea" id="X5b-ii-rRZ"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Budgets" image="tab-budgets" id="X6j-sv-Jbs" customClass="TabItem" customModule="FinanceAssistant" customModuleProvider="target">
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JR3-OB-bCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="873.91304347826099" y="-1128.3482142857142"/>
-        </scene>
         <!--Home-->
         <scene sceneID="s6q-tw-EiN">
             <objects>
@@ -73,7 +46,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="bHE-2A-eer" kind="relationship" relationship="viewControllers" id="vAX-eL-3oE"/>
-                        <segue destination="c7p-hd-lZq" kind="relationship" relationship="viewControllers" id="xiV-lq-ix1"/>
                         <segue destination="3on-HO-3GJ" kind="relationship" relationship="viewControllers" id="gj7-Ea-dDL"/>
                     </connections>
                 </tabBarController>
@@ -90,19 +62,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Accounts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcY-Lh-Ikd">
-                                <rect key="frame" x="25" y="84" width="182.5" height="33"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8n-HI-rel">
-                                <rect key="frame" x="25" y="412" width="184.5" height="28"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                                <rect key="frame" x="25" y="84" width="149.5" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kT-4S-voW">
-                                <rect key="frame" x="0.0" y="152" width="414" height="220"/>
+                                <rect key="frame" x="0.0" y="122.5" width="414" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="rbC-03-Nr8"/>
                                 </constraints>
@@ -111,7 +77,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVU-JZ-gQT">
-                                <rect key="frame" x="0.0" y="460" width="414" height="353"/>
+                                <rect key="frame" x="0.0" y="430.5" width="414" height="382.5"/>
                                 <connections>
                                     <segue destination="hJC-Fw-jcA" kind="embed" id="HpQ-iN-SUo"/>
                                 </connections>
@@ -120,16 +86,14 @@
                         <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstItem="hcY-Lh-Ikd" firstAttribute="leading" secondItem="vHf-vy-STa" secondAttribute="leading" constant="25" id="AXd-j6-GGL"/>
-                            <constraint firstItem="EVU-JZ-gQT" firstAttribute="top" secondItem="o8n-HI-rel" secondAttribute="bottom" constant="20" id="Dfh-wT-R1S"/>
                             <constraint firstItem="hcY-Lh-Ikd" firstAttribute="top" secondItem="vHf-vy-STa" secondAttribute="top" constant="40" id="L0j-iw-ixW"/>
                             <constraint firstItem="2kT-4S-voW" firstAttribute="trailing" secondItem="vHf-vy-STa" secondAttribute="trailing" id="Le5-Ke-khq"/>
                             <constraint firstItem="EVU-JZ-gQT" firstAttribute="trailing" secondItem="vHf-vy-STa" secondAttribute="trailing" id="Wec-cT-ERP"/>
-                            <constraint firstItem="2kT-4S-voW" firstAttribute="top" secondItem="hcY-Lh-Ikd" secondAttribute="bottom" constant="35" id="YCR-18-WKG"/>
-                            <constraint firstItem="o8n-HI-rel" firstAttribute="top" secondItem="2kT-4S-voW" secondAttribute="bottom" constant="40" id="cpi-bw-gtF"/>
+                            <constraint firstItem="2kT-4S-voW" firstAttribute="top" secondItem="hcY-Lh-Ikd" secondAttribute="bottom" constant="8" id="YCR-18-WKG"/>
                             <constraint firstItem="2kT-4S-voW" firstAttribute="trailing" secondItem="vHf-vy-STa" secondAttribute="trailing" id="dEY-Qu-pnq"/>
                             <constraint firstItem="EVU-JZ-gQT" firstAttribute="bottom" secondItem="vHf-vy-STa" secondAttribute="bottom" id="f10-zY-JSm"/>
+                            <constraint firstItem="EVU-JZ-gQT" firstAttribute="top" secondItem="2kT-4S-voW" secondAttribute="bottom" constant="88" id="gBM-EF-YYk"/>
                             <constraint firstItem="EVU-JZ-gQT" firstAttribute="leading" secondItem="vHf-vy-STa" secondAttribute="leading" id="lFa-Od-kwJ"/>
-                            <constraint firstItem="o8n-HI-rel" firstAttribute="leading" secondItem="vHf-vy-STa" secondAttribute="leading" constant="25" id="lSZ-zB-maZ"/>
                             <constraint firstItem="2kT-4S-voW" firstAttribute="leading" secondItem="vHf-vy-STa" secondAttribute="leading" id="oEm-7W-dlm"/>
                             <constraint firstItem="2kT-4S-voW" firstAttribute="leading" secondItem="vHf-vy-STa" secondAttribute="leading" id="uzY-Ln-w1f"/>
                         </constraints>
@@ -138,13 +102,10 @@
                     <tabBarItem key="tabBarItem" title="Accounts" image="tab-accounts" id="Bsm-Fi-Z6q" customClass="TabItem" customModule="FinanceAssistant" customModuleProvider="target">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                    <connections>
-                        <outlet property="settingsLabel" destination="o8n-HI-rel" id="ECs-IJ-1vQ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lr9-b6-9yn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1576.8115942028987" y="-1128.3482142857142"/>
+            <point key="canvasLocation" x="922" y="-1128"/>
         </scene>
         <!--Accounts Cards View Controller-->
         <scene sceneID="tHu-s1-jRX">
@@ -174,35 +135,45 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pZ5-f7-iJL" customClass="Я">
-                                                    <rect key="frame" x="20" y="20" width="374" height="180"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZ5-f7-iJL" customClass="Я">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="180"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDG-Ir-uxq">
-                                                            <rect key="frame" x="20" y="20" width="333" height="22"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJk-hW-xdB">
+                                                            <rect key="frame" x="16" y="76" width="342" height="28"/>
+                                                            <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="28"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-23-EHQ">
-                                                            <rect key="frame" x="20" y="107" width="57" height="25.5"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
-                                                            <color key="textColor" red="0.85882352941176465" green="0.83137254901960778" blue="0.82352941176470584" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJk-hW-xdB">
-                                                            <rect key="frame" x="20" y="127" width="333" height="36"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Montserrat-ExtraBold" family="Montserrat" pointSize="18"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wrc-Jz-xAv">
+                                                            <rect key="frame" x="16" y="16" width="33" height="33"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDG-Ir-uxq">
+                                                            <rect key="frame" x="16" y="121" width="342" height="18"/>
+                                                            <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.13725490196078433" green="0.24705882352941178" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="kJk-hW-xdB" firstAttribute="top" secondItem="Wrc-Jz-xAv" secondAttribute="bottom" constant="27" id="4nJ-Dh-OAS"/>
+                                                        <constraint firstItem="xDG-Ir-uxq" firstAttribute="leading" secondItem="pZ5-f7-iJL" secondAttribute="leading" constant="16" id="DzL-Zm-iht"/>
+                                                        <constraint firstItem="Wrc-Jz-xAv" firstAttribute="top" secondItem="pZ5-f7-iJL" secondAttribute="top" constant="16" id="PKx-is-53f"/>
+                                                        <constraint firstItem="Wrc-Jz-xAv" firstAttribute="leading" secondItem="pZ5-f7-iJL" secondAttribute="leading" constant="16" id="Uft-J7-2kO"/>
+                                                        <constraint firstItem="kJk-hW-xdB" firstAttribute="centerY" secondItem="pZ5-f7-iJL" secondAttribute="centerY" id="c5c-fy-T4y"/>
+                                                        <constraint firstItem="xDG-Ir-uxq" firstAttribute="top" secondItem="kJk-hW-xdB" secondAttribute="bottom" constant="17" id="hTO-7d-Cbx"/>
+                                                        <constraint firstItem="kJk-hW-xdB" firstAttribute="leading" secondItem="pZ5-f7-iJL" secondAttribute="leading" constant="16" id="mUD-um-1Bs"/>
+                                                        <constraint firstItem="kJk-hW-xdB" firstAttribute="centerX" secondItem="pZ5-f7-iJL" secondAttribute="centerX" id="tEG-Dk-OUV"/>
+                                                        <constraint firstItem="xDG-Ir-uxq" firstAttribute="centerX" secondItem="pZ5-f7-iJL" secondAttribute="centerX" id="vtu-uD-5xI"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="pZ5-f7-iJL" secondAttribute="bottom" constant="40" id="JJ2-up-Gts"/>
+                                                <constraint firstAttribute="trailing" secondItem="pZ5-f7-iJL" secondAttribute="trailing" constant="20" id="Q3Y-Zv-Hdp"/>
+                                                <constraint firstItem="pZ5-f7-iJL" firstAttribute="leading" secondItem="7Af-D2-mJy" secondAttribute="leading" constant="20" id="UOq-uW-1Zx"/>
+                                                <constraint firstItem="pZ5-f7-iJL" firstAttribute="top" secondItem="7Af-D2-mJy" secondAttribute="top" id="uva-Lz-4ae"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.85882352939999995" green="0.83137254900000002" blue="0.82352941180000006" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -234,18 +205,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYh-g7-Ug2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2337.68115942029" y="-1209.375"/>
+            <point key="canvasLocation" x="1673.913043478261" y="-1294.4196428571429"/>
         </scene>
-        <!--Accounts Actions View Controller-->
+        <!--Accounts Operations View Controller-->
         <scene sceneID="qfZ-PC-0ke">
             <objects>
-                <viewController id="hJC-Fw-jcA" customClass="AccountsActionsViewController" customModule="FinanceAssistant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hJC-Fw-jcA" customClass="AccountsOperationsViewController" customModule="FinanceAssistant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dH7-Mq-Tn0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="382.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kOG-KT-lh4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="382.5"/>
                                 <color key="backgroundColor" name="background-color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F9n-lV-QFQ">
                                     <size key="itemSize" width="414" height="85"/>
@@ -254,7 +225,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AccountAction" id="ppS-bp-tGP" customClass="AccountAction" customModule="FinanceAssistant" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AccountOperation" id="ppS-bp-tGP" customClass="AccountOperation" customModule="FinanceAssistant" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="10" width="414" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AoO-2S-s6r">
@@ -328,13 +299,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPq-4U-jr6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2337.68115942029" y="-982.70089285714278"/>
+            <point key="canvasLocation" x="1674" y="-991"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
+        <image name="mastercard-logo" width="33" height="33"/>
         <image name="tab-accounts" width="33" height="33"/>
-        <image name="tab-budgets" width="33" height="33"/>
         <image name="tab-home" width="33" height="33"/>
         <namedColor name="background-color">
             <color red="0.97299998998641968" green="0.97600001096725464" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

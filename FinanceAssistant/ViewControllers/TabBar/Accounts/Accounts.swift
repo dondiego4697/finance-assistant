@@ -1,9 +1,7 @@
 import UIKit
 
 final class AccountsViewController: UIViewController {
-    
-    @IBOutlet weak var settingsLabel: UILabel!
-    
+        
     private let owner = Owner()
     private var accounts: [Account] = []
     
@@ -18,8 +16,8 @@ final class AccountsViewController: UIViewController {
         
         if let cardsCollection = segue.destination as? AccountsCardsViewController {
             cardsCollection.configure(with: accounts)
-        } else if let actionsCollection = segue.destination as? AccountsActionsViewController {
-            actionsCollection.configure(actionsCount: 10)
+        } else if let operationsCollection = segue.destination as? AccountsOperationsViewController {
+            operationsCollection.configure(operationsCount: 10)
         }
     }
     

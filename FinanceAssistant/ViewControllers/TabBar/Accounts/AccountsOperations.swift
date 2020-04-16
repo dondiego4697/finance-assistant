@@ -1,18 +1,18 @@
 import UIKit
 
-final class AccountsActionsViewController: UIViewController {
+final class AccountsOperationsViewController: UIViewController {
     
-    private var actionsCount = 0
+    private var operationsCount = 10
     
-    func configure(actionsCount: Int) {
-        self.actionsCount = actionsCount
+    func configure(operationsCount: Int) {
+        self.operationsCount = operationsCount
     }
 }
 
-extension AccountsActionsViewController: UICollectionViewDataSource {
+extension AccountsOperationsViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        actionsCount
+        operationsCount
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -24,9 +24,9 @@ extension AccountsActionsViewController: UICollectionViewDataSource {
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: AccountAction.reuseIdentifier,
+            withReuseIdentifier: AccountOperation.reuseIdentifier,
             for: indexPath
-        ) as! AccountAction
+        ) as! AccountOperation
         
         cell.setActionStyle()
         cell.setActionData()
@@ -35,4 +35,4 @@ extension AccountsActionsViewController: UICollectionViewDataSource {
     }
 }
 
-extension AccountsActionsViewController: UICollectionViewDelegate {}
+extension AccountsOperationsViewController: UICollectionViewDelegate {}
