@@ -68,7 +68,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2kT-4S-voW">
-                                <rect key="frame" x="0.0" y="122.5" width="414" height="220"/>
+                                <rect key="frame" x="0.0" y="138.5" width="414" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="rbC-03-Nr8"/>
                                 </constraints>
@@ -77,7 +77,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVU-JZ-gQT">
-                                <rect key="frame" x="0.0" y="430.5" width="414" height="382.5"/>
+                                <rect key="frame" x="0.0" y="446.5" width="414" height="366.5"/>
                                 <connections>
                                     <segue destination="hJC-Fw-jcA" kind="embed" id="HpQ-iN-SUo"/>
                                 </connections>
@@ -89,7 +89,7 @@
                             <constraint firstItem="hcY-Lh-Ikd" firstAttribute="top" secondItem="vHf-vy-STa" secondAttribute="top" constant="40" id="L0j-iw-ixW"/>
                             <constraint firstItem="2kT-4S-voW" firstAttribute="trailing" secondItem="vHf-vy-STa" secondAttribute="trailing" id="Le5-Ke-khq"/>
                             <constraint firstItem="EVU-JZ-gQT" firstAttribute="trailing" secondItem="vHf-vy-STa" secondAttribute="trailing" id="Wec-cT-ERP"/>
-                            <constraint firstItem="2kT-4S-voW" firstAttribute="top" secondItem="hcY-Lh-Ikd" secondAttribute="bottom" constant="8" id="YCR-18-WKG"/>
+                            <constraint firstItem="2kT-4S-voW" firstAttribute="top" secondItem="hcY-Lh-Ikd" secondAttribute="bottom" constant="24" id="YCR-18-WKG"/>
                             <constraint firstItem="2kT-4S-voW" firstAttribute="trailing" secondItem="vHf-vy-STa" secondAttribute="trailing" id="dEY-Qu-pnq"/>
                             <constraint firstItem="EVU-JZ-gQT" firstAttribute="bottom" secondItem="vHf-vy-STa" secondAttribute="bottom" id="f10-zY-JSm"/>
                             <constraint firstItem="EVU-JZ-gQT" firstAttribute="top" secondItem="2kT-4S-voW" secondAttribute="bottom" constant="88" id="gBM-EF-YYk"/>
@@ -128,7 +128,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AccountCard" translatesAutoresizingMaskIntoConstraints="NO" id="X0C-CJ-mhn" customClass="AccountCard" customModule="FinanceAssistant" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" reuseIdentifier="AccountCard" translatesAutoresizingMaskIntoConstraints="NO" id="X0C-CJ-mhn" customClass="AccountCard" customModule="FinanceAssistant" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7Af-D2-mJy">
@@ -212,11 +212,11 @@
             <objects>
                 <viewController id="hJC-Fw-jcA" customClass="AccountsOperationsViewController" customModule="FinanceAssistant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dH7-Mq-Tn0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="382.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="366.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kOG-KT-lh4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="382.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="366.5"/>
                                 <color key="backgroundColor" name="background-color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F9n-lV-QFQ">
                                     <size key="itemSize" width="414" height="85"/>
